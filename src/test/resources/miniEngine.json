@@ -1,0 +1,66 @@
+{
+  "abilities": {
+    "DEX": {
+      "name": "Dexterity"
+    },
+    "INT": {
+      "name": "Intelligence"
+    }
+  },
+  "skills": {
+    "acrobatics": {
+      "name": "Acrobatics",
+      "ability": "DEX"
+    },
+    "history": {
+      "name": "History",
+      "ability": "INT"
+    }
+  },
+  "races": {
+    "imp": {
+      "name": "Imp",
+      "size": "medium",
+      "movement": {
+        "walk": {
+          "speed": 30
+        },
+        "fly": {
+          "speed": 20
+        }
+      },
+      "vision": {
+        "darkvision": {
+          "distance": 60
+        }
+      }
+    },
+    "centaur": {
+      "name": "Centaur",
+      "size": "large",
+      "movement": {
+        "walk": {
+          "speed": 40
+        }
+      }
+    }
+  },
+  "classes": {
+    "singsword": {
+      "name": "Singsword",
+      "hit_die": "1d6",
+      "hp": {
+        "base": 8,
+        "mod": "DEX"
+      }
+    },
+    "witch_doctor": {
+      "name": "Witch Doctor",
+      "hit_die": "1d8",
+      "hp": {
+        "base": 12,
+        "mod": "CON"
+      }
+    }
+  }
+}

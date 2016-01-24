@@ -1,0 +1,8 @@
+{
+  "name": "Witch Doctor",
+  "hit_die": "1d8",
+  "hp": {
+    "base": 12,
+    "mod": "CON"
+  }
+}

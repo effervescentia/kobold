@@ -1,0 +1,11 @@
+{
+  "name": "Imp",
+  "size": "medium",
+  "movement": {
+    "walk": 30,
+    "fly": 20
+  },
+  "vision": {
+    "darkvision": 60
+  }
+}

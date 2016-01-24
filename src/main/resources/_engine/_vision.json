@@ -1,0 +1,14 @@
+{
+  "normal": {
+    "name": "Normal Vision"
+  },
+  "darkvision": {
+    "name": "Darkvision"
+  },
+  "blindsight": {
+    "name": "Blindsight"
+  },
+  "truesight": {
+    "name": "Truesight"
+  }
+}

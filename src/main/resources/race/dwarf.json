@@ -1,0 +1,152 @@
+{
+  "name": "Dwarf",
+
+  "name_suggestion": {
+    "male_name": {
+      "name": "Male Names",
+      "options": ["Adrik", "Alberich", "Baern", "Barendd", "Brottor", "Bruenor", "Oain", "Oarrak", "Oelg", "Eberk", "Einkil", "Fargrim", "Flint", "Gardain", "Harbek", "Kildrak", "Morgran", "Orsik", "Oskar", "Rangrim", "Rurik", "Taklinn", "Thoradin", "Thorin", "Tordek", "Traubon", "Travok", "Ulfgar", "Veit", "Vondal"]
+    },
+    "female_name": {
+      "name": "Female Names",
+      "options": ["Amber", "Artin", "Audhild", "Bardryn", "Oagnal", "Oiesa", "Eldeth", "Falkrunn", "Finellen", "Gunnloda", "Gurdis", "Helja", "Hlin", "Kathra", "Kristryd", "lide", "Liftrasa", "Mardred", "Riswynn", "Sannl", "Torbera", "Torgga", "Vistra"]
+    },
+    "clan_name": {
+      "name": "Clan Names",
+      "options": ["Balderk", "Battlehammer", "Brawnanvil", "Oankil", "Fireforge", "Frostbeard", "Gorunn", "Holderhek", "Ironfist", "Loderr", "Lutgehr", "Rumnaheim", "Strakeln", "Torunn", "Ungart"]
+    }
+  },
+
+  "name_patterns": [{
+    "name": "Male Name",
+    "pattern": "{male_name} {clan_name}"
+  }, {
+    "name": "Female Name",
+    "pattern": "{female_name} {clan_name}"
+  }],
+
+  "ability": {
+    "CON": 2
+  },
+
+  "age": {
+    "max": 350,
+    "adult": 50
+  },
+
+  "size": {
+    "height": [4, 5],
+    "weight": 150,
+    "type": "medium"
+  },
+
+  "movement": {
+    "walk": 25
+  },
+
+  "vision": {
+    "normal": true,
+    "darkvision": 60
+  },
+
+  "language": {
+    "value": ["language.common", "language.dwarvish"]
+  },
+
+  "sub-race": {
+
+    "hill_dwarf": {
+      "name": "Hill Dwarf",
+
+      "ability": {
+        "WIS": 1
+      },
+
+      "features": {
+        "dwarven_toughness": {
+          "name": "Dwarven Toughness",
+          "modifies": {
+            "self.max_hp": {
+              "with": "1 * self.version"
+            }
+          }
+        }
+      }
+    },
+
+    "mountain_dwarf": {
+      "name": "Mountain Dwarf",
+
+      "ability": {
+        "STR": 2
+      },
+
+      "features": {
+        "dwarven_armor_training": {
+          "name": "Dwarven Armor Training",
+          "modifies": {
+            "self.proficiency.armor": {
+              "with": {
+                "add": ["_light", "_medium"]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "features": {
+    "dwarven_resilience": {
+      "name": "Dwarven Resilience",
+      "modifies": {
+        "self.saving_throws": {
+          "with": "advantage",
+          "when": "$.type == 'poison'"
+        },
+        "self.resistance.poison": {
+          "with": {
+            "value": true
+          }
+        }
+      }
+    },
+    "dwarven_combat_training": {
+      "name": "Dwarven Combat Training",
+      "modifies": {
+        "self.proficiency.weapon": {
+          "with": {
+            "add": ["battleaxe", "handaxe", "throwing_hammer", "warhammer"]
+          }
+        }
+      }
+    },
+    "tool_proficiency": {
+      "name": "Tool Proficiency",
+      "modifies": {
+        "self.proficiency.tool": {
+          "with": {
+            "add": {
+              "options": [
+                "items.tools.artisans_tools.smiths_tools",
+                "items.tools.artisans_tools.brewers_supplies",
+                "items.tools.artisans_tools.masons_tools"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "stonecunning": {
+      "name": "Stonecunning",
+      "modifies": {
+        "self.skill.history": {
+          "with": [
+            "proficient", {
+              "add": "self.proficiency_bonus"
+            }
+          ],
+          "flavor": "when determining the origin of stonework"
+        }
+      }
+    }
+  }
+}

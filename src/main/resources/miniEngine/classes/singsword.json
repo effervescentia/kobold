@@ -1,0 +1,8 @@
+{
+  "name": "Singsword",
+  "hit_die": "1d6",
+  "hp": {
+    "base": 8,
+    "mod": "DEX"
+  }
+}

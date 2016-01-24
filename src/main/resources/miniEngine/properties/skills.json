@@ -1,0 +1,10 @@
+{
+  "acrobatics": {
+    "name": "Acrobatics",
+    "ability": "DEX"
+  },
+  "history": {
+    "name": "History",
+    "ability": "INT"
+  }
+}

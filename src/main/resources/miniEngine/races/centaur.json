@@ -1,0 +1,7 @@
+{
+  "name": "Centaur",
+  "size": "large",
+  "movement": {
+    "walk": 40
+  }
+}

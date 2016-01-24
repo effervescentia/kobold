@@ -1,0 +1,11 @@
+{
+  "small": {
+    "name": "Small"
+  },
+  "medium": {
+    "name": "Medium"
+  },
+  "large": {
+    "name": "Large"
+  }
+}

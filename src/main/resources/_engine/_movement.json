@@ -1,0 +1,11 @@
+{
+  "walk": {
+    "name": "Walk Speed"
+  },
+  "swim": {
+    "name": "Swim Speed"
+  },
+  "fly": {
+    "name": "Fly Speed"
+  }
+}
