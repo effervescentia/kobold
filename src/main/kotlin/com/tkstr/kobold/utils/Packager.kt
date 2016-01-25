@@ -1,4 +1,4 @@
-package com.tkstr.kobold
+package com.tkstr.kobold.utils
 
 import com.beust.klaxon.JsonObject
 import com.beust.klaxon.Parser

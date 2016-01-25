@@ -1,7 +1,7 @@
 package com.tkstr.kobold.core
 
 import com.beust.klaxon.JsonObject
-import com.tkstr.kobold.Packager
+import com.tkstr.kobold.utils.Packager
 import com.tkstr.kobold.core.Modules.ModuleCompanion
 import com.tkstr.kobold.core.Modules.Property
 
